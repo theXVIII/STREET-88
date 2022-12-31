@@ -177,6 +177,10 @@
         font-size: 16px;
     }
 
+    .body__lists{
+        padding-left: 0;
+    }
+
     .burger__cards{
         display: flex;
         flex-direction: column;
