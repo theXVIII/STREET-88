@@ -120,7 +120,23 @@
     }
 }
 
-@media (max-width: 576px){
+@media (max-width:576px){
+    .above__nav{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .above__nav_list{
+        display: flex;
+        gap: 20px;
+    }
+
+    .signs_post{
+        display: flex;
+        flex-direction: column;
+    }
 
     .nav__list{
         gap: 25px;
@@ -190,7 +206,11 @@
     }
 
     .footer{
-        row-gap: 40px;
+        row-gap: 20px;
+    }
+
+    .footer__list{
+        padding-bottom: 25px;
     }
 
     .footer__logo{
