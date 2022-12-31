@@ -52,9 +52,8 @@ ul{
 .above__nav{
     display: flex;
     justify-content: space-between;
-    padding: 18px 0;
+    padding: 18px 15px;
     font-family: var(--fontRobotoRegular);
-
 }
 
 .above__nav_list{
@@ -85,7 +84,48 @@ ul{
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(125, 115, 115, 0.5);
     backdrop-filter: blur(7.5px);
-    height: 65px;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    width: 100%;     
+}
+
+.bottom__nav_btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border: none;
+    background: transparent;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.bottom__nav_btn span{
+    background: var(--white);
+    display: block;
+    height: 8px;
+    width: 100%;
+    transition: .5s linear;
+    border-radius: 3px;
+}
+
+.bottom__nav_btn:focus span:nth-child(1) {
+    transform: rotate(45deg) translateY(-16px) translateY(25px) translateX(31px) translateX(-22px);
+}
+
+.bottom__nav_btn:focus span:nth-child(2) {
+    transform: rotate(-45deg);
+    background: transparent;
+}
+
+.bottom__nav_btn:focus span:nth-child(3) {
+    transform: rotate(-45deg) translateY(16px) translateY(-25px) translateX(32px) translateX(-23px);
 }
 
 .bottom__nav_lists{
@@ -97,7 +137,6 @@ ul{
 .nav__list{
     display: flex;
     justify-content: space-between;
-    gap: 28px;
 }
 
 .bottom__nav_logo{
@@ -114,13 +153,17 @@ ul{
     border-radius: 4px;
 }
 
+.bottom__nav_btn{
+    display: none;
+}
+
 .nav__list_links a{
     font-family: var(--fontRalewayRegular);
     font-size: 18px;
     line-height: 21px;
     text-align: right;
     transition: 0.3s;
-    padding: 21px 14px;
+    padding: 26px 14px;
 }
 .nav__list_links a:hover{
     background: rgba(105, 207, 23, 0.75);
@@ -219,6 +262,11 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+.desc__img{
+    max-width: 100%;
+}
+
 
 .desription__img{
     max-width: 100%;
