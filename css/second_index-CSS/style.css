@@ -111,7 +111,7 @@ ul{
     display: block;
     height: 8px;
     width: 100%;
-    transition: .5s linear;
+    transition: .2s linear;
     border-radius: 3px;
 }
 
@@ -162,7 +162,7 @@ ul{
     font-size: 18px;
     line-height: 21px;
     text-align: right;
-    transition: 0.3s;
+    transition: 0.2s;
     padding: 26px 14px;
 }
 .nav__list_links a:hover{

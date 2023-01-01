@@ -38,7 +38,7 @@
     }
 
     .bottom__nav_btn:focus~.nav__list{
-        transition: 0.3s;
+        transition: 0.2s;
         background: black;
         width: 100%;
         max-width: 770px;
