@@ -68,7 +68,7 @@
         display: flex;
     }
 
-    .bottom__nav_btn:focus~.nav__list{
+    .bottom__nav_btn:hover ~.nav__list{
         display: block;
         transition: 0.2s;
         background: black;
