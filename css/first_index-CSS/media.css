@@ -68,11 +68,11 @@
         display: flex;
     }
 
-    .bottom__nav_btn:hover ~.nav__list{
-        display: block;
+    .bottom__nav_btn:focus~.nav__list{
         transition: 0.2s;
         background: black;
         width: 100%;
+        max-width: 770px;
         height: 100%;
         height: 300px;
         top: 74px;
